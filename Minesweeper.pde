@@ -66,7 +66,7 @@ public void displayLosingMessage()
       }
     }
   }
-  draw();
+   redraw();
   noLoop();
   //your code here
 }
