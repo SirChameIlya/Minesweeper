@@ -9,7 +9,7 @@ public void setup ()
 {
   size(400, 400);
   textAlign(CENTER, CENTER);
- textSize(10);
+  textSize(10);
   // make the manager
   Interactive.make( this );
 
@@ -76,8 +76,8 @@ public void displayWinningMessage()
       buttons[r][c].setLabel("You win!");
       buttons[r][c].clicked = true;
     }
-    noLoop();
   }
+  noLoop();
   //your code here
 }
 public boolean isValid(int r, int c)
