@@ -45,7 +45,7 @@ public boolean isWon()
   //your code here
   for (int r = 0; r < NUM_ROWS; r++) {
     for (int c = 0; c < NUM_COLS; c++) {
-      if ( buttons[r][c].clicked == false && mines.contains( buttons[r][c] ) == false) {
+      if ( ( buttons[r][c].clicked == false && mines.contains( buttons[r][c] ) == false)  || (  mines.contains( buttons[r][c] ) == true && buttons[r][c].clicked == true)){
         return false;
       }
     }
@@ -66,7 +66,8 @@ public void displayLosingMessage()
       }
     }
   }
-  //noLoop();
+  draw();
+  noLoop();
   //your code here
 }
 public void displayWinningMessage()
