@@ -127,12 +127,16 @@ public class MSButton
   {
     clicked = true;
     if (mouseButton == RIGHT) {
-      if (flagged == true) {
-        flagged = false;
+      //if (flagged == true) {
+      //  flagged = false;
+      //  clicked = false;
+      //}
+      //if (flagged == false) {
+      //  flagged = true;
+      //}
+      flagged = !flagged;
+      if (flagged == false){
         clicked = false;
-      }
-      if (flagged == false) {
-        flagged = true;
       }
     } else if ( mines.contains(this) ) {
       displayLosingMessage();
